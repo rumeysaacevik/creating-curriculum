@@ -1,12 +1,12 @@
 Creating a Curriculum 
 
-1) The main purpose of the program is creating engineering faculty lectures with professors adding and removing lectures and accessing this curriculum by students.
+- The main purpose of the program is creating engineering faculty lectures with professors adding and removing lectures and accessing this curriculum by students.
 
-2)Program Objects and Relationships: The created objects are faculty and departments, and the relationship between them is faculties is creating from departments. 
+-Program Objects and Relationships: The created objects are faculty and departments, and the relationship between them is faculties is creating from departments. 
 
-3) The main purpose of use of object Faculty is, it is an object that can gather department together.
+- The main purpose of use of object Faculty is, it is an object that can gather department together.
 
-4) The main purpose of object department is, define the courses and make the curriculum clear by listing the topics within these courses.
+- The main purpose of object department is, define the courses and make the curriculum clear by listing the topics within these courses.
 
 
 Complex Rules  (5-7 Rules) 
