@@ -1,27 +1,38 @@
-# creating-curriculum
+Creating a Curriculum 
 
-1) Aim of the project  
-Donation Management System is a program that offers users various donation options and 
-manages these donations. The main purpose of the project is to allow users to donate in 
-certain categories (food, clothing, money and other) and to track these donations 
-according to categories. Displays total hidden and open donations with open donation and 
-secret donation functions.
+1) The main purpose of the program is creating engineering faculty lectures with professors adding and removing lectures and accessing this curriculum by students.
 
-2) Program Structs and Relationships 
-2.1)The main purpose of use of “Person” struct : - This structure contains basic information of donating users. Keeps the user's name, surname, 
-e-mail address, password and ID 
-2.2)The main purpose of use of Donation struct : - This structure contains donation information. Checks whether donations are anonymous 
-2.3)The main purpose of donationSystem struct : - This structure represents the donation system and maintains a dynamically allocated array to 
-store donations 
-3) Rules 
-3.1) Users can register to the system with their name, surname, e-mail and password 
-information. 
-3.2) Users can donate food, clothing, money or other categories. Before donating, the 
-category to donate must be selected. 
-3.3) Users can choose to make their donations anonymous or public. Anonymous 
-donations ensure that the identity of the donor is kept private. 
-3.4) When monetary donation is selected, the country to donate to must be selected. The 
-donation amount must be converted into the currency of the country to be donated. 
-3.5) Users can view total open and anonymous donation amounts. 
-3.6) Users can only select available donation categories. In case of an invalid category 
-selection, an error message should be displayed.
+2)Program Objects and Relationships: 
+
+The created objects are faculty and departments, and the relationship between them is faculties is creating from departments. 
+
+3) The main purpose of use of object Faculty is, it is an object that can gather department together.
+
+4) The main purpose of object department is, define the courses and make the curriculum clear by listing the topics within these courses.
+
+
+Complex Rules  (5-7 Rules) 
+• It uses the arguments we gave in the test with the createProfessor method and also 
+
+assigns an id of its own and adds it and creates an object. The reason is that if there is a 
+
+professor with the same name and surname, they all have a unique number via id. 
+
+• It uses the arguments we gave in the test with the createStudent method and also assigns 
+an id of its own and adds it and creates an object. The reason is that if there is a student 
+with the same name and surname, they all have a unique number via id. 
+• The student who successfully enters the system with the showLectureDetails method 
+can see the details of the lectures. 
+•Professors can add and remove courses from the curriculum with the addSubject and 
+removeSubject methods. 
+•With the listSubjects method, students can list the lectures and subjects they will take 
+and with the findSubject method, they can search for a topic and find out whether it is in 
+that lecture. 
+•With profLogin method it looks at the professors in all departments and logs in if it finds 
+the conditions and with stdLogin method it looks at the students in all departments and 
+logs in if it finds the conditions. 
+•With the createLecture method, a name and a username are taken. If there is a proffessor 
+with that username in the professors in the department, it is kept in the prof target, then 
+the create lecture in the admin is created by assigning the target to the professor and 
+added to the department courses, and all students in the department are assigned this 
+course if there is no proffessor nothing is added, returns error sentence.
