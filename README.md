@@ -1,4 +1,4 @@
-Creating a Curriculum 
+# Creating a Curriculum 
 
 - The main purpose of the program is creating engineering faculty lectures with professors adding and removing lectures and accessing this curriculum by students.
 
@@ -9,7 +9,7 @@ Creating a Curriculum
 - The main purpose of object department is, define the courses and make the curriculum clear by listing the topics within these courses.
 
 
-Complex Rules  (5-7 Rules) 
+# Complex Rules  :
 
 • It uses the arguments we gave in the test with the createProfessor method and also assigns an id of its own and adds it and creates an object. The reason is that if there is a professor with the same name and surname, they all have a unique number via id. 
 
