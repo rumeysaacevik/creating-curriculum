@@ -24,7 +24,6 @@
 •With profLogin method it looks at the professors in all departments and logs in if it finds the conditions and with stdLogin method it looks at the students in all departments and logs in if it finds the conditions. 
 
 •With the createLecture method, a name and a username are taken. If there is a proffessor with that username in the professors in the department, it is kept in the prof target, then the create lecture in the admin is created by assigning the target to the professor and
-
 added to the department courses, and all students in the department are assigned this course if there is no proffessor nothing is added, returns error sentence.
 
 
